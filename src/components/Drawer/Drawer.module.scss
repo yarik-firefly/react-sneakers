@@ -1,0 +1,36 @@
+.overlay {
+  background: rgb(0 0 0 / 61%);
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility .3s linear;
+  overflow: hidden;
+}
+
+.overlayVisible {
+  visibility: visible !important;
+  opacity: 1;
+  z-index: 10;
+  .drawer {
+    transform: translateX(0);
+  }
+  
+}
+
+.drawer {
+  width: 420px;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform .3s linear;
+}

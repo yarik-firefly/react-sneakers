@@ -1,6 +1,6 @@
 {
   "name": "react-sneakers",
-  "homepage": "https://github.com/yarik-firefly/sneakers-shop",
+  "homepage": "https://github.com/yarik-firefly/sneakers-shop.git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

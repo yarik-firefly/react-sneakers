@@ -25,7 +25,7 @@ const Header = (props: any) => {
         <div className="cart cu-p">
           <img onClick={props.onClickCart} src="img/cart.png" alt="" />
         </div>
-        <p>{cartSum} UAH</p>
+        <p className="header-sum">{cartSum} UAH</p>
         <div className="notes cu-p">
           <Link to="/favorite">
             <img src="img/notes.png" alt="" />

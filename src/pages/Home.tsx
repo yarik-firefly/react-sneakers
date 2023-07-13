@@ -45,7 +45,7 @@ const Home: React.FC<{
   return (
     <div className="content p-30">
       <div className="block-carousel">
-        <img className="mb-20" src={img} alt="" />
+        <img className="img-carousel mb-20" src={img} alt="" />
         <button className="btn-buy cu-p">КУПИТЬ</button>
       </div>
       <div className="input-title d-flex justify-between align-center mb-20">

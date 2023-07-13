@@ -343,6 +343,7 @@ body {
       .card {
         margin: 0 auto;
       }
+      
     }
     .btn-buy {
       width: 93px !important;
@@ -351,8 +352,13 @@ body {
       left: 51px !important;
       font-size: 8px !important;
     }
+    .block-carousel {
+      .img-carousel {
+        width: 500px;
+      }
   }
 }
+
 
 @media (max-width: 500px) {
   .wrapper {
@@ -384,7 +390,7 @@ body {
       font-size: 12px;
     }
     .img-carousel {
-      width: 350px;
+      width: 350px !important;
     }
 
     .input-title {
@@ -413,4 +419,4 @@ body {
       grid-template-columns: repeat(1, 100%) !important;
     }
   }
-}
+}}

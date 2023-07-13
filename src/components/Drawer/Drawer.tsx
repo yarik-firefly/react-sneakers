@@ -53,7 +53,12 @@ const Drawer: React.FC<{
       <div className={`${styles.drawer} p-30`}>
         <h2 className="pl-25 mb-30 d-flex justify-between align-items">
           Корзина
-          <img className="cu-p" onClick={() => onCloseCart()} src="img/btn-remove.svg" alt="Close" />
+          <img
+            className="cu-p"
+            onClick={() => onCloseCart()}
+            src="img/btn-remove.svg"
+            alt="Close"
+          />
         </h2>
 
         {itemCart.length < 1 ? (

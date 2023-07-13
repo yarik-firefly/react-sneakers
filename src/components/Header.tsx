@@ -12,7 +12,7 @@ const Header = (props: any) => {
         <Link to="/">
           <div className="d-flex align-center">
             <div className="logo-img cu-p">
-              <img width={40} height={40} src="/img/logo.png" alt="" />
+              <img width={40} height={40} src="img/logo.png" alt="" />
             </div>
             <div className="title ml-10">
               <h3>REACT SNEAKERS</h3>
@@ -23,7 +23,7 @@ const Header = (props: any) => {
       </div>
       <div className="right-bar">
         <div className="cart cu-p">
-          <img onClick={props.onClickCart} src="/img/cart.png" alt="" />
+          <img onClick={props.onClickCart} src="img/cart.png" alt="" />
         </div>
         <p>{cartSum} UAH</p>
         <div className="notes cu-p">

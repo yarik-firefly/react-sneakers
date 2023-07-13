@@ -7,7 +7,7 @@ import Home from "./pages/Home";
 import { Routes, Route, Link } from "react-router-dom";
 import Favorite from "./pages/Favorite";
 import AppContext from "./pages/context";
-import Orders from "./pages/Orders";
+import Orders from "./pages/Orders/Orders";
 
 const App: React.FC = () => {
   const [sneakers, setSneakers] = React.useState([]);
@@ -140,7 +140,7 @@ const App: React.FC = () => {
         <Header onClickCart={() => setOpenCart(!openCart)} />
         <Routes>
           <Route
-            path="/"
+            path=""
             element={
               <Home
                 itemCart={itemCart}
@@ -154,11 +154,11 @@ const App: React.FC = () => {
             }
           />
           <Route
-            path="/favorite"
+            path="favorite"
             element={<Favorite addFavorite={onAddToFavorites} />}
           />
 
-          <Route path="/orders" element={<Orders />} />
+          <Route path="orders" element={<Orders />} />
         </Routes>
       </div>
     </AppContext.Provider>

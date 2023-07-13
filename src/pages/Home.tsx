@@ -1,7 +1,9 @@
 import Search from "../components/Search";
 import Card from "../components/Card";
+import img from "../assets/Carousel.png";
 
 import React from "react";
+import AppContext from "./context";
 
 const Home: React.FC<{
   searchValue: string;
@@ -35,7 +37,6 @@ const Home: React.FC<{
           key={item ? item.id : index}
           onPlus={(obj: object) => onAddToCart(obj)}
           {...item}
-          
           isLoading={isLoading}
         />
       )
@@ -43,6 +44,10 @@ const Home: React.FC<{
   };
   return (
     <div className="content p-30">
+      <div className="block-carousel">
+        <img className="mb-20" src={img} alt="" />
+        <button className="btn-buy cu-p">КУПИТЬ</button>
+      </div>
       <div className="input-title d-flex justify-between align-center mb-20">
         <h1>Все кроссовки</h1>
         <Search

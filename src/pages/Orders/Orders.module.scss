@@ -1,0 +1,18 @@
+.content {
+  text-align: center;
+  .sadSmile {
+    margin-bottom: 20px;
+  }
+  p {
+    color: #aaa8a8;
+    margin-bottom: 50px;
+  }
+
+  .btnOrder.back {
+    .arrow-back-ico {
+      position: absolute;
+      left: 30px;
+      top: 20px;
+    }
+  }
+}

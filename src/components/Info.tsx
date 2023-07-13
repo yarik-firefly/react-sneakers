@@ -1,9 +1,8 @@
 import React from "react";
 import AppContext from "../pages/context";
+import BtnBack from "./BtnBack";
 
-const CartEmpty: React.FC<any> = ({title, description, img}) => {
-
-  const { setOpenCart } = React.useContext(AppContext)
+const CartEmpty: React.FC<any> = ({ title, description, img }) => {
   return (
     <div className="cartEmpty">
       <div className="img-box">
@@ -11,12 +10,7 @@ const CartEmpty: React.FC<any> = ({title, description, img}) => {
       </div>
       <h2>{title}</h2>
       <p>{description}</p>
-      <div className="btn-back">
-        <button onClick={() => setOpenCart(false)} className="btnOrder back">
-          <img className="arrow-back-ico" src="img/arrow-back.png" />
-          Вернуться назад
-        </button>
-      </div>
+      <BtnBack />
     </div>
   );
 };

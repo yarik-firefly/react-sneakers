@@ -1,6 +1,12 @@
 import React from "react";
 import MySkeleton from "./Skeleton";
 import AppContext from "../pages/context";
+import { useDispatch, useSelector } from "react-redux";
+import { axiosCartPost } from "../redux/slices/itemCartSlice";
+import {
+  axiosFavoritePost,
+  setFillHeart,
+} from "../redux/slices/itemFavoriteSlice";
 
 const Card: React.FC<{
   title: string;
@@ -12,6 +18,7 @@ const Card: React.FC<{
   added: boolean;
   id: string;
   isLoading: boolean;
+  icoPlus: boolean;
 }> = ({
   title,
   price,
@@ -20,21 +27,31 @@ const Card: React.FC<{
   addFavorite,
   favorited,
   id,
-  isLoading,
+  icoPlus,
 }) => {
   const { isItemAdded } = React.useContext(AppContext);
+  // const { fillHeart } = useSelector((state: any) => state.favorite);
+  const dispatch = useDispatch();
 
   const obj = { title, price, imgUrl, id, parentId: id };
 
   const [fillHeart, setFillHeart] = React.useState(favorited);
   const changeColorHeart = () => {
-    addFavorite(obj);
+    //@ts-ignore
+    dispatch(axiosFavoritePost(obj) as any);
     setFillHeart(!fillHeart);
   };
 
+  const addToCartHandle = (obj: any) => {
+    //@ts-ignore
+    dispatch(axiosCartPost(obj) as any);
+  };
+  const { status } = useSelector((state: any) => state.sneakers);
+  const { statusGet } = useSelector((state: any) => state.orders);
+
   return (
     <div className="card p-15 mb-30">
-      {isLoading ? (
+      {status === "loading" || statusGet === "loading" ? (
         <MySkeleton key={id} />
       ) : (
         <>
@@ -54,7 +71,7 @@ const Card: React.FC<{
               <b>{price} UAH</b>
             </div>
             <div className="btn">
-              {onPlus && (
+              {icoPlus && (
                 <img
                   width={32}
                   src={
@@ -62,7 +79,7 @@ const Card: React.FC<{
                   }
                   alt="Close"
                   onClick={() => {
-                    onPlus(obj);
+                    addToCartHandle(obj);
                   }}
                 />
               )}

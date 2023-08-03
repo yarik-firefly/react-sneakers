@@ -4,10 +4,11 @@ import AppContext from "../../pages/context";
 import axios from "axios";
 import { useCart } from "../../hooks/useCart";
 import styles from "./Drawer.module.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { axiosOrdersPost, setOrders } from "../../redux/slices/ordersSlice";
 
 const Drawer: React.FC<{
   onCloseCart: any;
-  itemCart: object[];
   deleteFromCart: any;
 }> = ({ deleteFromCart, onCloseCart }) => {
   const delay = (ms: number) => {
@@ -16,34 +17,16 @@ const Drawer: React.FC<{
     });
   };
 
-  const { itemCart, cartSum, setItemCart, openCart } = useCart();
+  const { itemCart } = useSelector((state: any) => state.cart);
+  const { statusPost } = useSelector((state: any) => state.orders);
+  const { cartSum, openCart } = useCart();
 
   const [isOrderComplited, setIsOrderComplited] = React.useState(false);
-  const [orderId, setOrderId] = React.useState(null);
-  const [loading, setLoading] = React.useState(false);
+  // const [orderId, setOrderId] = React.useState(null);
+  const dispatch = useDispatch();
 
   const clickOnOrderBtn = async () => {
-    try {
-      setLoading(true);
-      const { data } = await axios.post(
-        "https://64ad3197b470006a5ec58319.mockapi.io/orders",
-        { items: itemCart }
-      );
-      setOrderId(data.id);
-      setIsOrderComplited(true);
-      setItemCart([]);
-
-      for (let i = 0; i < itemCart.length; i++) {
-        const item = itemCart[i];
-        await axios.delete(
-          "https://64aa95030c6d844abede97df.mockapi.io/cart/" + item.id
-        );
-        await delay(1000);
-      }
-    } catch (error) {
-      alert("Не удалось оформить заказ :(");
-    }
-    setLoading(false);
+    dispatch(axiosOrdersPost() as any);
   };
 
   return (
@@ -63,10 +46,14 @@ const Drawer: React.FC<{
 
         {itemCart.length < 1 ? (
           <Info
-            title={isOrderComplited ? "Заказ оформлен!" : "Корзина пустая"}
+            title={
+              statusPost === "success" ? "Заказ оформлен!" : "Корзина пустая"
+            }
             description={
-              isOrderComplited
-                ? `Ваш заказ #${orderId} скоро будет передан курьерской доставке`
+              statusPost === "success"
+                ? `Ваш заказ #${Math.round(
+                    Math.random() * 100
+                  )} скоро будет передан курьерской доставке`
                 : "Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ."
             }
             img={
@@ -99,7 +86,9 @@ const Drawer: React.FC<{
                     </li>
                   </ul>
                   <img
-                    onClick={() => deleteFromCart(item.id)}
+                    onClick={() =>
+                      deleteFromCart({ id: item.id, parentId: item.parentId })
+                    }
                     className="removeBtn"
                     src="img/btn-remove.svg"
                     alt="Remove"
@@ -124,7 +113,7 @@ const Drawer: React.FC<{
             <button
               onClick={clickOnOrderBtn}
               className="btnOrder"
-              disabled={loading}
+              disabled={statusPost === "loading"}
             >
               Оформить Заказ
               <svg

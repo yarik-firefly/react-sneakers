@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.edee7169.css",
-    "main.js": "/static/js/main.8522ac6c.js",
-    "Drawer.css": "/static/css/Drawer.3fc4bd8c.chunk.css",
-    "Drawer.js": "/static/js/Drawer.003ce845.chunk.js",
-    "Favorite.css": "/static/css/Favorite.146af716.chunk.css",
-    "Favorite.js": "/static/js/Favorite.4680f335.chunk.js",
-    "static/media/Carousel.png": "/static/media/Carousel.3f677132f70dac1c4854.png",
-    "index.html": "/index.html",
-    "main.edee7169.css.map": "/static/css/main.edee7169.css.map",
-    "main.8522ac6c.js.map": "/static/js/main.8522ac6c.js.map",
-    "Drawer.3fc4bd8c.chunk.css.map": "/static/css/Drawer.3fc4bd8c.chunk.css.map",
-    "Drawer.003ce845.chunk.js.map": "/static/js/Drawer.003ce845.chunk.js.map",
-    "Favorite.146af716.chunk.css.map": "/static/css/Favorite.146af716.chunk.css.map",
-    "Favorite.4680f335.chunk.js.map": "/static/js/Favorite.4680f335.chunk.js.map"
+    "main.css": "/yarik-firefly/react-sneakers.git/static/css/main.edee7169.css",
+    "main.js": "/yarik-firefly/react-sneakers.git/static/js/main.9f118cd2.js",
+    "Drawer.css": "/yarik-firefly/react-sneakers.git/static/css/Drawer.3fc4bd8c.chunk.css",
+    "Drawer.js": "/yarik-firefly/react-sneakers.git/static/js/Drawer.003ce845.chunk.js",
+    "Favorite.css": "/yarik-firefly/react-sneakers.git/static/css/Favorite.146af716.chunk.css",
+    "Favorite.js": "/yarik-firefly/react-sneakers.git/static/js/Favorite.4680f335.chunk.js",
+    "static/media/Carousel.png": "/yarik-firefly/react-sneakers.git/static/media/Carousel.3f677132f70dac1c4854.png",
+    "index.html": "/yarik-firefly/react-sneakers.git/index.html",
+    "main.edee7169.css.map": "/yarik-firefly/react-sneakers.git/static/css/main.edee7169.css.map",
+    "main.9f118cd2.js.map": "/yarik-firefly/react-sneakers.git/static/js/main.9f118cd2.js.map",
+    "Drawer.3fc4bd8c.chunk.css.map": "/yarik-firefly/react-sneakers.git/static/css/Drawer.3fc4bd8c.chunk.css.map",
+    "Drawer.003ce845.chunk.js.map": "/yarik-firefly/react-sneakers.git/static/js/Drawer.003ce845.chunk.js.map",
+    "Favorite.146af716.chunk.css.map": "/yarik-firefly/react-sneakers.git/static/css/Favorite.146af716.chunk.css.map",
+    "Favorite.4680f335.chunk.js.map": "/yarik-firefly/react-sneakers.git/static/js/Favorite.4680f335.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.edee7169.css",
-    "static/js/main.8522ac6c.js"
+    "static/js/main.9f118cd2.js"
   ]
 }

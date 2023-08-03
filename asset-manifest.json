@@ -1,14 +1,22 @@
 {
   "files": {
-    "main.css": "/react-sneakers/static/css/main.ecd980f6.css",
-    "main.js": "/react-sneakers/static/js/main.59772945.js",
-    "static/media/Carousel.png": "/react-sneakers/static/media/Carousel.3f677132f70dac1c4854.png",
-    "index.html": "/react-sneakers/index.html",
-    "main.ecd980f6.css.map": "/react-sneakers/static/css/main.ecd980f6.css.map",
-    "main.59772945.js.map": "/react-sneakers/static/js/main.59772945.js.map"
+    "main.css": "/static/css/main.edee7169.css",
+    "main.js": "/static/js/main.8522ac6c.js",
+    "Drawer.css": "/static/css/Drawer.3fc4bd8c.chunk.css",
+    "Drawer.js": "/static/js/Drawer.003ce845.chunk.js",
+    "Favorite.css": "/static/css/Favorite.146af716.chunk.css",
+    "Favorite.js": "/static/js/Favorite.4680f335.chunk.js",
+    "static/media/Carousel.png": "/static/media/Carousel.3f677132f70dac1c4854.png",
+    "index.html": "/index.html",
+    "main.edee7169.css.map": "/static/css/main.edee7169.css.map",
+    "main.8522ac6c.js.map": "/static/js/main.8522ac6c.js.map",
+    "Drawer.3fc4bd8c.chunk.css.map": "/static/css/Drawer.3fc4bd8c.chunk.css.map",
+    "Drawer.003ce845.chunk.js.map": "/static/js/Drawer.003ce845.chunk.js.map",
+    "Favorite.146af716.chunk.css.map": "/static/css/Favorite.146af716.chunk.css.map",
+    "Favorite.4680f335.chunk.js.map": "/static/js/Favorite.4680f335.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecd980f6.css",
-    "static/js/main.59772945.js"
+    "static/css/main.edee7169.css",
+    "static/js/main.8522ac6c.js"
   ]
 }

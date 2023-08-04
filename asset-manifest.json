@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/yarik-firefly/sneakers-shop/static/css/main.edee7169.css",
-    "main.js": "/yarik-firefly/sneakers-shop/static/js/main.ee34172f.js",
-    "Drawer.css": "/yarik-firefly/sneakers-shop/static/css/Drawer.3fc4bd8c.chunk.css",
-    "Drawer.js": "/yarik-firefly/sneakers-shop/static/js/Drawer.003ce845.chunk.js",
-    "Favorite.css": "/yarik-firefly/sneakers-shop/static/css/Favorite.146af716.chunk.css",
-    "Favorite.js": "/yarik-firefly/sneakers-shop/static/js/Favorite.4680f335.chunk.js",
-    "static/media/Carousel.png": "/yarik-firefly/sneakers-shop/static/media/Carousel.3f677132f70dac1c4854.png",
-    "index.html": "/yarik-firefly/sneakers-shop/index.html",
-    "main.edee7169.css.map": "/yarik-firefly/sneakers-shop/static/css/main.edee7169.css.map",
-    "main.ee34172f.js.map": "/yarik-firefly/sneakers-shop/static/js/main.ee34172f.js.map",
-    "Drawer.3fc4bd8c.chunk.css.map": "/yarik-firefly/sneakers-shop/static/css/Drawer.3fc4bd8c.chunk.css.map",
-    "Drawer.003ce845.chunk.js.map": "/yarik-firefly/sneakers-shop/static/js/Drawer.003ce845.chunk.js.map",
-    "Favorite.146af716.chunk.css.map": "/yarik-firefly/sneakers-shop/static/css/Favorite.146af716.chunk.css.map",
-    "Favorite.4680f335.chunk.js.map": "/yarik-firefly/sneakers-shop/static/js/Favorite.4680f335.chunk.js.map"
+    "main.css": "/sneakers-shop/static/css/main.edee7169.css",
+    "main.js": "/sneakers-shop/static/js/main.c57cd881.js",
+    "Drawer.css": "/sneakers-shop/static/css/Drawer.3fc4bd8c.chunk.css",
+    "Drawer.js": "/sneakers-shop/static/js/Drawer.003ce845.chunk.js",
+    "Favorite.css": "/sneakers-shop/static/css/Favorite.146af716.chunk.css",
+    "Favorite.js": "/sneakers-shop/static/js/Favorite.4680f335.chunk.js",
+    "static/media/Carousel.png": "/sneakers-shop/static/media/Carousel.3f677132f70dac1c4854.png",
+    "index.html": "/sneakers-shop/index.html",
+    "main.edee7169.css.map": "/sneakers-shop/static/css/main.edee7169.css.map",
+    "main.c57cd881.js.map": "/sneakers-shop/static/js/main.c57cd881.js.map",
+    "Drawer.3fc4bd8c.chunk.css.map": "/sneakers-shop/static/css/Drawer.3fc4bd8c.chunk.css.map",
+    "Drawer.003ce845.chunk.js.map": "/sneakers-shop/static/js/Drawer.003ce845.chunk.js.map",
+    "Favorite.146af716.chunk.css.map": "/sneakers-shop/static/css/Favorite.146af716.chunk.css.map",
+    "Favorite.4680f335.chunk.js.map": "/sneakers-shop/static/js/Favorite.4680f335.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.edee7169.css",
-    "static/js/main.ee34172f.js"
+    "static/js/main.c57cd881.js"
   ]
 }
